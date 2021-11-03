@@ -1,0 +1,94 @@
+body {
+  background-color: #111;
+  color: #fff;
+}
+
+
+button {
+  background-color: #4d4d4d; 
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.wrapper {
+  text-align: center;
+}
+.wapper > p {
+  line-height: 10px;
+}
+
+.box {
+  display: flex;
+  margin: 2rem auto; 
+  border: 5px solid #2d2d2d;
+  border-radius: 10px;
+  width: fit-content;
+
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.column-wrapper {
+  display: flex;
+}
+
+.column {
+  padding: 15px;
+}
+.column > led{
+  margin: 25px 0 25px 0;
+}
+.column > led:first-child{
+  margin: 0 0 25px 0;
+}
+.column > led:last-child{
+  margin: 25px 0 0 0;
+}
+
+led {
+  display: block;
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15%;
+  margin: auto;
+}
+led > span {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 5rem;
+  color: red;
+}
+led.off > span {
+  display: none;
+}
+led.low-beam {
+  box-shadow: 0 0 5px #fff, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 40px red;
+  animation: neon 0.78s ease;
+}
+led.off {
+  background-color: grey;
+  box-shadow: none;
+}
+
+@keyframes neon {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+#clock-time {
+  font-weight: 800;
+  font-size: 3em;
+}
