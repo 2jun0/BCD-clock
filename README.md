@@ -10,4 +10,4 @@ A Binary-Coded Decimal clock.
 
 Go to Wikipedia to see the details.
 
-[Binary-Coded Decimal](https://en.wikipedia.org/wiki/Binary_clock)
+[Binary-Coded Decimal](https://en.wikipedia.org/wiki/Binary-coded_decimal)
