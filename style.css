@@ -3,14 +3,14 @@ body {
   background-color: #111;
   color: #fff;
 
-  font-family: -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 button {
-  background-color: #4d4d4d; 
+  background-color: #4d4d4d;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -29,12 +29,12 @@ button {
 
 .box {
   display: flex;
-  margin: 2rem auto; 
+  margin: 2rem auto;
   border: 5px solid #2d2d2d;
   border-radius: 10px;
   width: fit-content;
 
-  -ms-user-select: none; 
+  -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -48,13 +48,13 @@ button {
 .column {
   padding: 15px;
 }
-.column > led{
+.column > led {
   margin: 25px 0 25px 0;
 }
-.column > led:first-child{
+.column > led:first-child {
   margin: 0 0 25px 0;
 }
-.column > led:last-child{
+.column > led:last-child {
   margin: 25px 0 0 0;
 }
 
@@ -76,7 +76,8 @@ led.off > span {
   display: none;
 }
 led.low-beam {
-  box-shadow: 0 0 5px #fff, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 40px red;
+  box-shadow: 0 0 5px #fff, 0 0 10px red, 0 0 15px red, 0 0 20px red,
+    0 0 35px red, 0 0 40px red;
   animation: neon 0.78s ease;
 }
 led.off {
@@ -86,7 +87,8 @@ led.off {
 
 @keyframes neon {
   from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red,
+      0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
   }
   to {
     background-color: #fff;
